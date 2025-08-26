@@ -22,7 +22,7 @@
     <nav class="glass-nav">
         <div class="nav-container">
             <div class="logo">
-                <i class="fas fa-car-side animated-icon"></i>
+                <i class="fas fa-car-side logo-icon"></i>
                 <span>DriveVision</span>
             </div>
             <ul class="nav-links">
@@ -87,6 +87,11 @@
                     <i class="fas fa-filter"></i>
                     <span>Apply Filters</span>
                 </button>
+                
+                <button class="compare-btn glass-btn" id="compare-btn" style="display: none;">
+                    <i class="fas fa-balance-scale"></i>
+                    <span>Compare Selected (<span id="compare-count">0</span>)</span>
+                </button>
             </div>
         </section>
 
@@ -94,6 +99,12 @@
             <div class="cars-grid" id="cars-container">
                 <!-- Luxury Cars -->
                 <div class="car-card glass-card" data-category="luxury" data-price="350">
+                    <div class="compare-checkbox">
+                        <input type="checkbox" id="compare-1" class="compare-input">
+                        <label for="compare-1" class="compare-label">
+                            <i class="fas fa-plus"></i>
+                        </label>
+                    </div>
                     <div class="car-image">
                         <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Rolls-Royce Phantom">
                         <div class="car-badge">Premium</div>
@@ -114,6 +125,12 @@
                 </div>
 
                 <div class="car-card glass-card" data-category="luxury" data-price="280">
+                    <div class="compare-checkbox">
+                        <input type="checkbox" id="compare-2" class="compare-input">
+                        <label for="compare-2" class="compare-label">
+                            <i class="fas fa-plus"></i>
+                        </label>
+                    </div>
                     <div class="car-image">
                         <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Bentley Continental GT">
                         <div class="car-badge">Luxury</div>
@@ -134,6 +151,12 @@
                 </div>
 
                 <div class="car-card glass-card" data-category="luxury" data-price="250">
+                    <div class="compare-checkbox">
+                        <input type="checkbox" id="compare-3" class="compare-input">
+                        <label for="compare-3" class="compare-label">
+                            <i class="fas fa-plus"></i>
+                        </label>
+                    </div>
                     <div class="car-image">
                         <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Mercedes S-Class">
                         <div class="car-badge">Elite</div>
@@ -155,6 +178,12 @@
 
                 <!-- Electric Cars -->
                 <div class="car-card glass-card" data-category="electric" data-price="180">
+                    <div class="compare-checkbox">
+                        <input type="checkbox" id="compare-4" class="compare-input">
+                        <label for="compare-4" class="compare-label">
+                            <i class="fas fa-plus"></i>
+                        </label>
+                    </div>
                     <div class="car-image">
                         <img src="https://images.unsplash.com/photo-1536700503339-1e4b06520771?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Tesla Model X">
                         <div class="car-badge">Electric</div>
@@ -175,6 +204,12 @@
                 </div>
 
                 <div class="car-card glass-card" data-category="electric" data-price="160">
+                    <div class="compare-checkbox">
+                        <input type="checkbox" id="compare-5" class="compare-input">
+                        <label for="compare-5" class="compare-label">
+                            <i class="fas fa-plus"></i>
+                        </label>
+                    </div>
                     <div class="car-image">
                         <img src="https://images.unsplash.com/photo-1614200187524-dc4b892acf16?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Porsche Taycan">
                         <div class="car-badge">EV</div>
@@ -195,6 +230,12 @@
                 </div>
 
                 <div class="car-card glass-card" data-category="electric" data-price="140">
+                    <div class="compare-checkbox">
+                        <input type="checkbox" id="compare-6" class="compare-input">
+                        <label for="compare-6" class="compare-label">
+                            <i class="fas fa-plus"></i>
+                        </label>
+                    </div>
                     <div class="car-image">
                         <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Audi e-tron">
                         <div class="car-badge">Green</div>
@@ -216,6 +257,12 @@
 
                 <!-- Sports Cars -->
                 <div class="car-card glass-card" data-category="sports" data-price="220">
+                    <div class="compare-checkbox">
+                        <input type="checkbox" id="compare-7" class="compare-input">
+                        <label for="compare-7" class="compare-label">
+                            <i class="fas fa-plus"></i>
+                        </label>
+                    </div>
                     <div class="car-image">
                         <img src="https://images.unsplash.com/photo-1614200187524-dc4b892acf16?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Ferrari 488 GTB">
                         <div class="car-badge">Sports</div>
@@ -236,6 +283,12 @@
                 </div>
 
                 <div class="car-card glass-card" data-category="sports" data-price="200">
+                    <div class="compare-checkbox">
+                        <input type="checkbox" id="compare-8" class="compare-input">
+                        <label for="compare-8" class="compare-label">
+                            <i class="fas fa-plus"></i>
+                        </label>
+                    </div>
                     <div class="car-image">
                         <img src="https://images.unsplash.com/photo-1614200187524-dc4b892acf16?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Lamborghini Huracán">
                         <div class="car-badge">Fast</div>
@@ -256,6 +309,12 @@
                 </div>
 
                 <div class="car-card glass-card" data-category="sports" data-price="180">
+                    <div class="compare-checkbox">
+                        <input type="checkbox" id="compare-9" class="compare-input">
+                        <label for="compare-9" class="compare-label">
+                            <i class="fas fa-plus"></i>
+                        </label>
+                    </div>
                     <div class="car-image">
                         <img src="https://images.unsplash.com/photo-1614200187524-dc4b892acf16?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="McLaren 720S">
                         <div class="car-badge">Track</div>
@@ -277,8 +336,14 @@
 
                 <!-- SUVs -->
                 <div class="car-card glass-card" data-category="suv" data-price="120">
+                    <div class="compare-checkbox">
+                        <input type="checkbox" id="compare-10" class="compare-input">
+                        <label for="compare-10" class="compare-label">
+                            <i class="fas fa-plus"></i>
+                        </label>
+                    </div>
                     <div class="car-image">
-                        <i class="fas fa-car-side car-icon"></i>
+                        <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Range Rover Sport">
                         <div class="car-badge">SUV</div>
                     </div>
                     <div class="car-info">
@@ -297,8 +362,14 @@
                 </div>
 
                 <div class="car-card glass-card" data-category="suv" data-price="100">
+                    <div class="compare-checkbox">
+                        <input type="checkbox" id="compare-11" class="compare-input">
+                        <label for="compare-11" class="compare-label">
+                            <i class="fas fa-plus"></i>
+                        </label>
+                    </div>
                     <div class="car-image">
-                        <i class="fas fa-car-side car-icon"></i>
+                        <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="BMW X5">
                         <div class="car-badge">Family</div>
                     </div>
                     <div class="car-info">
@@ -317,8 +388,14 @@
                 </div>
 
                 <div class="car-card glass-card" data-category="suv" data-price="90">
+                    <div class="compare-checkbox">
+                        <input type="checkbox" id="compare-12" class="compare-input">
+                        <label for="compare-12" class="compare-label">
+                            <i class="fas fa-plus"></i>
+                        </label>
+                    </div>
                     <div class="car-image">
-                        <i class="fas fa-car-side car-icon"></i>
+                        <img src="https://images.unsplash.com/photo-1536700503339-1e4b06520771?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Jeep Wrangler">
                         <div class="car-badge">Adventure</div>
                     </div>
                     <div class="car-info">
@@ -338,8 +415,14 @@
 
                 <!-- Compact Cars -->
                 <div class="car-card glass-card" data-category="compact" data-price="60">
+                    <div class="compare-checkbox">
+                        <input type="checkbox" id="compare-13" class="compare-input">
+                        <label for="compare-13" class="compare-label">
+                            <i class="fas fa-plus"></i>
+                        </label>
+                    </div>
                     <div class="car-image">
-                        <i class="fas fa-car-side car-icon"></i>
+                        <img src="https://images.unsplash.com/photo-1614200187524-dc4b892acf16?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="BMW 3 Series">
                         <div class="car-badge">Compact</div>
                     </div>
                     <div class="car-info">
@@ -358,8 +441,14 @@
                 </div>
 
                 <div class="car-card glass-card" data-category="compact" data-price="50">
+                    <div class="compare-checkbox">
+                        <input type="checkbox" id="compare-14" class="compare-input">
+                        <label for="compare-14" class="compare-label">
+                            <i class="fas fa-plus"></i>
+                        </label>
+                    </div>
                     <div class="car-image">
-                        <i class="fas fa-car-side car-icon"></i>
+                        <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Audi A4">
                         <div class="car-badge">Efficient</div>
                     </div>
                     <div class="car-info">
@@ -378,8 +467,14 @@
                 </div>
 
                 <div class="car-card glass-card" data-category="compact" data-price="45">
+                    <div class="compare-checkbox">
+                        <input type="checkbox" id="compare-15" class="compare-input">
+                        <label for="compare-15" class="compare-label">
+                            <i class="fas fa-plus"></i>
+                        </label>
+                    </div>
                     <div class="car-image">
-                        <i class="fas fa-car-side car-icon"></i>
+                        <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Mercedes A-Class">
                         <div class="car-badge">Smart</div>
                     </div>
                     <div class="car-info">
@@ -399,8 +494,14 @@
 
                 <!-- Family Cars -->
                 <div class="car-card glass-card" data-category="family" data-price="80">
+                    <div class="compare-checkbox">
+                        <input type="checkbox" id="compare-16" class="compare-input">
+                        <label for="compare-16" class="compare-label">
+                            <i class="fas fa-plus"></i>
+                        </label>
+                    </div>
                     <div class="car-image">
-                        <i class="fas fa-car-side car-icon"></i>
+                        <img src="https://images.unsplash.com/photo-1536700503339-1e4b06520771?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Volvo XC90">
                         <div class="car-badge">Family</div>
                     </div>
                     <div class="car-info">
@@ -419,8 +520,14 @@
                 </div>
 
                 <div class="car-card glass-card" data-category="family" data-price="70">
+                    <div class="compare-checkbox">
+                        <input type="checkbox" id="compare-17" class="compare-input">
+                        <label for="compare-17" class="compare-label">
+                            <i class="fas fa-plus"></i>
+                        </label>
+                    </div>
                     <div class="car-image">
-                        <i class="fas fa-car-side car-icon"></i>
+                        <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Toyota Highlander">
                         <div class="car-badge">Comfort</div>
                     </div>
                     <div class="car-info">
@@ -439,8 +546,14 @@
                 </div>
 
                 <div class="car-card glass-card" data-category="family" data-price="65">
+                    <div class="compare-checkbox">
+                        <input type="checkbox" id="compare-18" class="compare-input">
+                        <label for="compare-18" class="compare-label">
+                            <i class="fas fa-plus"></i>
+                        </label>
+                    </div>
                     <div class="car-image">
-                        <i class="fas fa-car-side car-icon"></i>
+                        <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Honda Pilot">
                         <div class="car-badge">Spacious</div>
                     </div>
                     <div class="car-info">
@@ -460,8 +573,14 @@
 
                 <!-- Additional Luxury Cars -->
                 <div class="car-card glass-card" data-category="luxury" data-price="320">
+                    <div class="compare-checkbox">
+                        <input type="checkbox" id="compare-19" class="compare-input">
+                        <label for="compare-19" class="compare-label">
+                            <i class="fas fa-plus"></i>
+                        </label>
+                    </div>
                     <div class="car-image">
-                        <i class="fas fa-car-side car-icon"></i>
+                        <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Bentley Flying Spur">
                         <div class="car-badge">Ultra</div>
                     </div>
                     <div class="car-info">
@@ -480,8 +599,14 @@
                 </div>
 
                 <div class="car-card glass-card" data-category="luxury" data-price="300">
+                    <div class="compare-checkbox">
+                        <input type="checkbox" id="compare-20" class="compare-input">
+                        <label for="compare-20" class="compare-label">
+                            <i class="fas fa-plus"></i>
+                        </label>
+                    </div>
                     <div class="car-image">
-                        <i class="fas fa-car-side car-icon"></i>
+                        <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Aston Martin DB11">
                         <div class="car-badge">Exclusive</div>
                     </div>
                     <div class="car-info">
@@ -501,8 +626,14 @@
 
                 <!-- Additional Electric Cars -->
                 <div class="car-card glass-card" data-category="electric" data-price="170">
+                    <div class="compare-checkbox">
+                        <input type="checkbox" id="compare-21" class="compare-input">
+                        <label for="compare-21" class="compare-label">
+                            <i class="fas fa-plus"></i>
+                        </label>
+                    </div>
                     <div class="car-image">
-                        <i class="fas fa-car-side car-icon"></i>
+                        <img src="https://images.unsplash.com/photo-1614200187524-dc4b892acf16?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Lucid Air">
                         <div class="car-badge">Future</div>
                     </div>
                     <div class="car-info">
@@ -521,8 +652,14 @@
                 </div>
 
                 <div class="car-card glass-card" data-category="electric" data-price="150">
+                    <div class="compare-checkbox">
+                        <input type="checkbox" id="compare-22" class="compare-input">
+                        <label for="compare-22" class="compare-label">
+                            <i class="fas fa-plus"></i>
+                        </label>
+                    </div>
                     <div class="car-image">
-                        <i class="fas fa-car-side car-icon"></i>
+                        <img src="https://images.unsplash.com/photo-1536700503339-1e4b06520771?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Rivian R1S">
                         <div class="car-badge">Eco</div>
                     </div>
                     <div class="car-info">
@@ -542,8 +679,14 @@
 
                 <!-- Additional Sports Cars -->
                 <div class="car-card glass-card" data-category="sports" data-price="240">
+                    <div class="compare-checkbox">
+                        <input type="checkbox" id="compare-23" class="compare-input">
+                        <label for="compare-23" class="compare-label">
+                            <i class="fas fa-plus"></i>
+                        </label>
+                    </div>
                     <div class="car-image">
-                        <i class="fas fa-car-side car-icon"></i>
+                        <img src="https://images.unsplash.com/photo-1614200187524-dc4b892acf16?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="McLaren P1">
                         <div class="car-badge">Super</div>
                     </div>
                     <div class="car-info">
@@ -562,8 +705,14 @@
                 </div>
 
                 <div class="car-card glass-card" data-category="sports" data-price="190">
+                    <div class="compare-checkbox">
+                        <input type="checkbox" id="compare-24" class="compare-input">
+                        <label for="compare-24" class="compare-label">
+                            <i class="fas fa-plus"></i>
+                        </label>
+                    </div>
                     <div class="car-image">
-                        <i class="fas fa-car-side car-icon"></i>
+                        <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Porsche 911 GT3">
                         <div class="car-badge">Track</div>
                     </div>
                     <div class="car-info">
@@ -637,5 +786,6 @@
 
     <script src="script.js"></script>
     <script src="cars-filter.js"></script>
+    <script src="compare.js"></script>
 </body>
 </html>
