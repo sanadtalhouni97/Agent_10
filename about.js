@@ -210,7 +210,7 @@ function initializeAchievementAnimations() {
             this.style.boxShadow = '0 25px 50px rgba(0, 0, 0, 0.2)';
             
             const icon = this.querySelector('.achievement-icon i');
-            icon.style.transform = 'rotate(360deg) scale(1.2)';
+            icon.style.transform = 'scale(1.2)';
             icon.style.transition = 'transform 0.5s ease';
         });
         
@@ -219,7 +219,7 @@ function initializeAchievementAnimations() {
             this.style.boxShadow = 'var(--glass-shadow)';
             
             const icon = this.querySelector('.achievement-icon i');
-            icon.style.transform = 'rotate(0deg) scale(1)';
+            icon.style.transform = 'scale(1)';
         });
     });
 }
@@ -245,7 +245,7 @@ function initializeValueCards() {
             this.style.boxShadow = '0 25px 50px rgba(0, 0, 0, 0.2)';
             
             const icon = this.querySelector('.value-icon i');
-            icon.style.transform = 'scale(1.3) rotate(10deg)';
+            icon.style.transform = 'scale(1.3)';
             icon.style.transition = 'transform 0.3s ease';
         });
         
@@ -254,7 +254,7 @@ function initializeValueCards() {
             this.style.boxShadow = 'var(--glass-shadow)';
             
             const icon = this.querySelector('.value-icon i');
-            icon.style.transform = 'scale(1) rotate(0deg)';
+            icon.style.transform = 'scale(1)';
         });
     });
 }

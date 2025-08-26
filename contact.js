@@ -209,7 +209,7 @@ function initializeFAQInteractions() {
                     otherAnswer.style.display = 'none';
                     otherAnswer.style.opacity = '0';
                     otherAnswer.style.transform = 'translateY(-10px)';
-                    otherIcon.style.transform = 'rotate(0deg)';
+                    otherIcon.style.transform = 'scale(1)';
                 }
             });
             
@@ -219,7 +219,7 @@ function initializeFAQInteractions() {
                 answer.style.display = 'none';
                 answer.style.opacity = '0';
                 answer.style.transform = 'translateY(-10px)';
-                icon.style.transform = 'rotate(0deg)';
+                icon.style.transform = 'scale(1)';
             } else {
                 item.classList.add('open');
                 answer.style.display = 'block';
@@ -230,7 +230,7 @@ function initializeFAQInteractions() {
                     answer.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
                 }, 10);
                 
-                icon.style.transform = 'rotate(180deg)';
+                icon.style.transform = 'scale(1.1)';
                 icon.style.transition = 'transform 0.3s ease';
             }
         });
@@ -290,7 +290,7 @@ function initializeSupportFeatures() {
             this.style.boxShadow = '0 25px 50px rgba(0, 0, 0, 0.2)';
             
             const icon = this.querySelector('.support-icon i');
-            icon.style.transform = 'scale(1.2) rotate(10deg)';
+            icon.style.transform = 'scale(1.2)';
             icon.style.transition = 'transform 0.3s ease';
         });
         
@@ -299,7 +299,7 @@ function initializeSupportFeatures() {
             this.style.boxShadow = 'var(--glass-shadow)';
             
             const icon = this.querySelector('.support-icon i');
-            icon.style.transform = 'scale(1) rotate(0deg)';
+            icon.style.transform = 'scale(1)';
         });
     });
 }

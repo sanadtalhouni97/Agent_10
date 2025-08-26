@@ -51,12 +51,12 @@ function animateFloatingShapes() {
         
         // Add mouse interaction
         shape.addEventListener('mouseenter', () => {
-            shape.style.transform = 'scale(1.2) rotate(180deg)';
+            shape.style.transform = 'scale(1.2)';
             shape.style.transition = 'transform 0.3s ease';
         });
         
         shape.addEventListener('mouseleave', () => {
-            shape.style.transform = 'scale(1) rotate(0deg)';
+            shape.style.transform = 'scale(1)';
         });
     });
 }
@@ -146,7 +146,7 @@ function initializeInteractiveElements() {
         card.addEventListener('mouseenter', function() {
             const icon = this.querySelector('.animated-icon');
             if (icon) {
-                icon.style.transform = 'scale(1.2) rotate(10deg)';
+                icon.style.transform = 'scale(1.2)';
                 icon.style.transition = 'transform 0.3s ease';
             }
         });
@@ -154,7 +154,7 @@ function initializeInteractiveElements() {
         card.addEventListener('mouseleave', function() {
             const icon = this.querySelector('.animated-icon');
             if (icon) {
-                icon.style.transform = 'scale(1) rotate(0deg)';
+                icon.style.transform = 'scale(1)';
             }
         });
     });
@@ -221,7 +221,7 @@ function createFloatingEmoji(container, emojis) {
         top: ${Math.random() * 100}%;
         animation: floatEmoji ${10 + Math.random() * 20}s linear infinite;
         opacity: 0.3;
-        transform: rotate(${Math.random() * 360}deg);
+
     `;
     
     container.appendChild(emoji);
@@ -407,7 +407,7 @@ const emojiStyles = document.createElement('style');
 emojiStyles.textContent = `
     @keyframes floatEmoji {
         0% {
-            transform: translateY(100vh) rotate(0deg);
+            transform: translateY(100vh);
             opacity: 0;
         }
         10% {
@@ -417,7 +417,7 @@ emojiStyles.textContent = `
             opacity: 0.3;
         }
         100% {
-            transform: translateY(-100px) rotate(360deg);
+            transform: translateY(-100px);
             opacity: 0;
         }
     }
