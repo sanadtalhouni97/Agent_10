@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - DriveVision</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animation">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
+    </div>
+
+    <nav class="glass-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-car-side animated-icon"></i>
+                <span>DriveVision</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cars.html">Cars</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="glass-btn">
+                    <i class="fas fa-user"></i>
+                    <span>Login</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="section-header">
+                <h1>Contact Us</h1>
+                <p>Get in touch with our team for any questions, support, or feedback</p>
+            </div>
+        </section>
+
+        <section class="contact-hero">
+            <div class="contact-content">
+                <div class="contact-info glass-card">
+                    <h2>Get in Touch</h2>
+                    <p>We're here to help! Reach out to us through any of the channels below, and we'll get back to you as soon as possible.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-phone animated-icon"></i>
+                            </div>
+                            <div class="method-details">
+                                <h3>Phone Support</h3>
+                                <p>+1 (555) 123-4567</p>
+                                <small>Available 24/7</small>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope animated-icon"></i>
+                            </div>
+                            <div class="method-details">
+                                <h3>Email Support</h3>
+                                <p>support@drivevision.com</p>
+                                <small>Response within 2 hours</small>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-comments animated-icon"></i>
+                            </div>
+                            <div class="method-details">
+                                <h3>Live Chat</h3>
+                                <p>Available on website</p>
+                                <small>Instant response</small>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-map-marker-alt animated-icon"></i>
+                            </div>
+                            <div class="method-details">
+                                <h3>Headquarters</h3>
+                                <p>123 Innovation Drive<br>San Francisco, CA 94105</p>
+                                <small>Visit by appointment</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container glass-card">
+                    <h2>Send us a Message</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="booking">Booking Support</option>
+                                <option value="technical">Technical Support</option>
+                                <option value="billing">Billing Question</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="partnership">Partnership</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell us how we can help you..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                Subscribe to our newsletter for updates and special offers
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn cta-btn primary">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Send Message</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="locations-section">
+            <div class="section-header">
+                <h2>Our Locations</h2>
+                <p>Find DriveVision near you</p>
+            </div>
+            <div class="locations-grid">
+                <div class="location-card glass-card">
+                    <div class="location-header">
+                        <div class="location-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="location-info">
+                            <h3>San Francisco</h3>
+                            <p>Headquarters</p>
+                        </div>
+                    </div>
+                    <div class="location-details">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Innovation Drive, SF 94105</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-clock"></i> Mon-Sun: 6:00 AM - 10:00 PM</p>
+                    </div>
+                    <div class="location-actions">
+                        <button class="location-btn glass-btn">
+                            <i class="fas fa-directions"></i>
+                            <span>Get Directions</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="location-card glass-card">
+                    <div class="location-header">
+                        <div class="location-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="location-info">
+                            <h3>New York</h3>
+                            <p>East Coast Hub</p>
+                        </div>
+                    </div>
+                    <div class="location-details">
+                        <p><i class="fas fa-map-marker-alt"></i> 456 Tech Avenue, NY 10001</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 234-5678</p>
+                        <p><i class="fas fa-clock"></i> Mon-Sun: 6:00 AM - 10:00 PM</p>
+                    </div>
+                    <div class="location-actions">
+                        <button class="location-btn glass-btn">
+                            <i class="fas fa-directions"></i>
+                            <span>Get Directions</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="location-card glass-card">
+                    <div class="location-header">
+                        <div class="location-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="location-info">
+                            <h3>Los Angeles</h3>
+                            <p>West Coast Hub</p>
+                        </div>
+                    </div>
+                    <div class="location-details">
+                        <p><i class="fas fa-map-marker-alt"></i> 789 Sunset Blvd, LA 90210</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 345-6789</p>
+                        <p><i class="fas fa-clock"></i> Mon-Sun: 6:00 AM - 10:00 PM</p>
+                    </div>
+                    <div class="location-actions">
+                        <button class="location-btn glass-btn">
+                            <i class="fas fa-directions"></i>
+                            <span>Get Directions</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="location-card glass-card">
+                    <div class="location-header">
+                        <div class="location-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="location-info">
+                            <h3>Miami</h3>
+                            <p>Florida Hub</p>
+                        </div>
+                    </div>
+                    <div class="location-details">
+                        <p><i class="fas fa-map-marker-alt"></i> 321 Ocean Drive, Miami 33139</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 456-7890</p>
+                        <p><i class="fas fa-clock"></i> Mon-Sun: 6:00 AM - 10:00 PM</p>
+                    </div>
+                    <div class="location-actions">
+                        <button class="location-btn glass-btn">
+                            <i class="fas fa-directions"></i>
+                            <span>Get Directions</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to common questions</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item glass-card">
+                    <div class="faq-question">
+                        <h3>How do I book a car?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Booking a car is easy! Simply browse our fleet, select your desired vehicle, choose your dates, and complete the booking process online. You can also call our support team for assistance.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item glass-card">
+                    <div class="faq-question">
+                        <h3>What documents do I need to rent a car?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You'll need a valid driver's license, credit card, and proof of insurance. International renters may need additional documentation. Our team will guide you through the requirements.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item glass-card">
+                    <div class="faq-question">
+                        <h3>Can I cancel or modify my booking?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! You can modify or cancel your booking up to 24 hours before your rental start time. Changes made within 24 hours may incur additional fees.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item glass-card">
+                    <div class="faq-question">
+                        <h3>What happens if I have an accident?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>All our vehicles come with comprehensive insurance coverage. In case of an accident, contact our 24/7 support team immediately, and we'll guide you through the process.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item glass-card">
+                    <div class="faq-question">
+                        <h3>Do you offer electric vehicles?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! We have a growing fleet of electric vehicles including Tesla, Porsche Taycan, and other premium electric cars. We also provide charging information and support.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item glass-card">
+                    <div class="faq-question">
+                        <h3>What are your operating hours?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our locations are open from 6:00 AM to 10:00 PM daily. For after-hours pickups or drop-offs, please contact us in advance to make arrangements.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="support-section">
+            <div class="section-header">
+                <h2>24/7 Support</h2>
+                <p>We're here to help you anytime, anywhere</p>
+            </div>
+            <div class="support-grid">
+                <div class="support-card glass-card">
+                    <div class="support-icon">
+                        <i class="fas fa-headset animated-icon"></i>
+                    </div>
+                    <h3>Phone Support</h3>
+                    <p>Call our dedicated support team anytime for immediate assistance with bookings, technical issues, or emergencies.</p>
+                    <a href="tel:+15551234567" class="support-link">
+                        <i class="fas fa-phone"></i>
+                        <span>Call Now</span>
+                    </a>
+                </div>
+                
+                <div class="support-card glass-card">
+                    <div class="support-icon">
+                        <i class="fas fa-comments animated-icon"></i>
+                    </div>
+                    <h3>Live Chat</h3>
+                    <p>Get instant help through our live chat feature. Our agents are available 24/7 to answer your questions.</p>
+                    <button class="support-link" id="liveChatBtn">
+                        <i class="fas fa-comments"></i>
+                        <span>Start Chat</span>
+                    </button>
+                </div>
+                
+                <div class="support-card glass-card">
+                    <div class="support-icon">
+                        <i class="fas fa-envelope animated-icon"></i>
+                    </div>
+                    <h3>Email Support</h3>
+                    <p>Send us a detailed message and we'll respond within 2 hours. Perfect for complex inquiries or feedback.</p>
+                    <a href="mailto:support@drivevision.com" class="support-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Send Email</span>
+                    </a>
+                </div>
+                
+                <div class="support-card glass-card">
+                    <div class="support-icon">
+                        <i class="fas fa-book animated-icon"></i>
+                    </div>
+                    <h3>Help Center</h3>
+                    <p>Browse our comprehensive help center with guides, tutorials, and answers to frequently asked questions.</p>
+                    <a href="#" class="support-link">
+                        <i class="fas fa-book"></i>
+                        <span>Visit Help Center</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>DriveVision</h3>
+                <p>Premium car rentals for every journey</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="cars.html">All Cars</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 DriveVision. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>

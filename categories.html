@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Categories - DriveVision</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animation">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
+    </div>
+
+    <nav class="glass-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-car-side animated-icon"></i>
+                <span>DriveVision</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cars.html">Cars</a></li>
+                <li><a href="categories.html" class="active">Categories</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="glass-btn">
+                    <i class="fas fa-user"></i>
+                    <span>Login</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="section-header">
+                <h1>Car Categories</h1>
+                <p>Explore our diverse range of vehicle categories designed for every lifestyle and need</p>
+            </div>
+        </section>
+
+        <section class="categories-showcase">
+            <!-- Luxury Category -->
+            <div class="category-detail glass-card">
+                <div class="category-header">
+                    <div class="category-icon-large">
+                        <i class="fas fa-crown animated-icon"></i>
+                    </div>
+                    <div class="category-info">
+                        <h2>Luxury Vehicles</h2>
+                        <p>Experience the pinnacle of automotive excellence with our premium luxury vehicles</p>
+                        <div class="category-stats">
+                            <span><i class="fas fa-car"></i> 50+ Cars</span>
+                            <span><i class="fas fa-dollar-sign"></i> $200-500/day</span>
+                            <span><i class="fas fa-star"></i> Premium Service</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-features">
+                    <h3>What's Included:</h3>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Premium Insurance</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-concierge-bell"></i>
+                            <span>Concierge Service</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-gas-pump"></i>
+                            <span>Fuel Included</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-route"></i>
+                            <span>Unlimited Mileage</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-cars">
+                    <h3>Popular Models:</h3>
+                    <div class="car-preview-grid">
+                        <div class="car-preview">
+                            <i class="fas fa-car-side"></i>
+                            <span>Rolls-Royce Phantom</span>
+                            <small>$350/day</small>
+                        </div>
+                        <div class="car-preview">
+                            <i class="fas fa-car-side"></i>
+                            <span>Bentley Continental</span>
+                            <small>$280/day</small>
+                        </div>
+                        <div class="car-preview">
+                            <i class="fas fa-car-side"></i>
+                            <span>Mercedes S-Class</span>
+                            <small>$250/day</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-actions">
+                    <a href="cars.html?category=luxury" class="cta-btn primary">
+                        <i class="fas fa-search"></i>
+                        <span>Browse Luxury Cars</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Electric Category -->
+            <div class="category-detail glass-card">
+                <div class="category-header">
+                    <div class="category-icon-large">
+                        <i class="fas fa-bolt animated-icon"></i>
+                    </div>
+                    <div class="category-info">
+                        <h2>Electric Vehicles</h2>
+                        <p>Drive into the future with our cutting-edge electric vehicles</p>
+                        <div class="category-stats">
+                            <span><i class="fas fa-car"></i> 30+ Cars</span>
+                            <span><i class="fas fa-dollar-sign"></i> $120-200/day</span>
+                            <span><i class="fas fa-leaf"></i> Eco-Friendly</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-features">
+                    <h3>What's Included:</h3>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <i class="fas fa-charging-station"></i>
+                            <span>Charging Network</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-battery-full"></i>
+                            <span>Full Battery</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-route"></i>
+                            <span>Unlimited Mileage</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>App Integration</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-cars">
+                    <h3>Popular Models:</h3>
+                    <div class="car-preview-grid">
+                        <div class="car-preview">
+                            <i class="fas fa-car-side"></i>
+                            <span>Tesla Model X</span>
+                            <small>$180/day</small>
+                        </div>
+                        <div class="car-preview">
+                            <i class="fas fa-car-side"></i>
+                            <span>Porsche Taycan</span>
+                            <small>$160/day</small>
+                        </div>
+                        <div class="car-preview">
+                            <i class="fas fa-car-side"></i>
+                            <span>Lucid Air</span>
+                            <small>$170/day</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-actions">
+                    <a href="cars.html?category=electric" class="cta-btn primary">
+                        <i class="fas fa-search"></i>
+                        <span>Browse Electric Cars</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Sports Category -->
+            <div class="category-detail glass-card">
+                <div class="category-header">
+                    <div class="category-icon-large">
+                        <i class="fas fa-tachometer-alt animated-icon"></i>
+                    </div>
+                    <div class="category-info">
+                        <h2>Sports Cars</h2>
+                        <p>Feel the adrenaline with our high-performance sports cars</p>
+                        <div class="category-stats">
+                            <span><i class="fas fa-car"></i> 25+ Cars</span>
+                            <span><i class="fas fa-dollar-sign"></i> $150-300/day</span>
+                            <span><i class="fas fa-fire"></i> High Performance</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-features">
+                    <h3>What's Included:</h3>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <i class="fas fa-tools"></i>
+                            <span>Track Preparation</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-helmet-safety"></i>
+                            <span>Safety Equipment</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-gas-pump"></i>
+                            <span>Premium Fuel</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-route"></i>
+                            <span>Track Access</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-cars">
+                    <h3>Popular Models:</h3>
+                    <div class="car-preview-grid">
+                        <div class="car-preview">
+                            <i class="fas fa-car-side"></i>
+                            <span>Ferrari 488 GTB</span>
+                            <small>$220/day</small>
+                        </div>
+                        <div class="car-preview">
+                            <i class="fas fa-car-side"></i>
+                            <span>Lamborghini Huracán</span>
+                            <small>$200/day</small>
+                        </div>
+                        <div class="car-preview">
+                            <i class="fas fa-car-side"></i>
+                            <span>McLaren 720S</span>
+                            <small>$180/day</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-actions">
+                    <a href="cars.html?category=sports" class="cta-btn primary">
+                        <i class="fas fa-search"></i>
+                        <span>Browse Sports Cars</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- SUV Category -->
+            <div class="category-detail glass-card">
+                <div class="category-header">
+                    <div class="category-icon-large">
+                        <i class="fas fa-truck animated-icon"></i>
+                    </div>
+                    <div class="category-info">
+                        <h2>SUVs & Crossovers</h2>
+                        <p>Versatile vehicles perfect for family trips and adventures</p>
+                        <div class="category-stats">
+                            <span><i class="fas fa-car"></i> 40+ Cars</span>
+                            <span><i class="fas fa-dollar-sign"></i> $80-150/day</span>
+                            <span><i class="fas fa-users"></i> Family Friendly</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-features">
+                    <h3>What's Included:</h3>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <i class="fas fa-baby-carriage"></i>
+                            <span>Child Seats</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-suitcase"></i>
+                            <span>Luggage Space</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-mountain"></i>
+                            <span>4WD/AWD</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-route"></i>
+                            <span>Unlimited Mileage</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-cars">
+                    <h3>Popular Models:</h3>
+                    <div class="car-preview-grid">
+                        <div class="car-preview">
+                            <i class="fas fa-car-side"></i>
+                            <span>Range Rover Sport</span>
+                            <small>$120/day</small>
+                        </div>
+                        <div class="car-preview">
+                            <i class="fas fa-car-side"></i>
+                            <span>BMW X5</span>
+                            <small>$100/day</small>
+                        </div>
+                        <div class="car-preview">
+                            <i class="fas fa-car-side"></i>
+                            <span>Jeep Wrangler</span>
+                            <small>$90/day</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-actions">
+                    <a href="cars.html?category=suv" class="cta-btn primary">
+                        <i class="fas fa-search"></i>
+                        <span>Browse SUVs</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Compact Category -->
+            <div class="category-detail glass-card">
+                <div class="category-header">
+                    <div class="category-icon-large">
+                        <i class="fas fa-car animated-icon"></i>
+                    </div>
+                    <div class="category-info">
+                        <h2>Compact & City Cars</h2>
+                        <p>Perfect for urban driving and daily commutes</p>
+                        <div class="category-stats">
+                            <span><i class="fas fa-car"></i> 35+ Cars</span>
+                            <span><i class="fas fa-dollar-sign"></i> $40-80/day</span>
+                            <span><i class="fas fa-city"></i> City Friendly</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-features">
+                    <h3>What's Included:</h3>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <i class="fas fa-parking"></i>
+                            <span>Easy Parking</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-gas-pump"></i>
+                            <span>Fuel Efficient</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Bluetooth</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-route"></i>
+                            <span>Unlimited Mileage</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-cars">
+                    <h3>Popular Models:</h3>
+                    <div class="car-preview-grid">
+                        <div class="car-preview">
+                            <i class="fas fa-car-side"></i>
+                            <span>BMW 3 Series</span>
+                            <small>$60/day</small>
+                        </div>
+                        <div class="car-preview">
+                            <i class="fas fa-car-side"></i>
+                            <span>Audi A4</span>
+                            <small>$50/day</small>
+                        </div>
+                        <div class="car-preview">
+                            <i class="fas fa-car-side"></i>
+                            <span>Mercedes A-Class</span>
+                            <small>$45/day</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-actions">
+                    <a href="cars.html?category=compact" class="cta-btn primary">
+                        <i class="fas fa-search"></i>
+                        <span>Browse Compact Cars</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Family Category -->
+            <div class="category-detail glass-card">
+                <div class="category-header">
+                    <div class="category-icon-large">
+                        <i class="fas fa-home animated-icon"></i>
+                    </div>
+                    <div class="category-info">
+                        <h2>Family Vehicles</h2>
+                        <p>Safe and spacious vehicles designed for family comfort</p>
+                        <div class="category-stats">
+                            <span><i class="fas fa-car"></i> 30+ Cars</span>
+                            <span><i class="fas fa-dollar-sign"></i> $60-120/day</span>
+                            <span><i class="fas fa-heart"></i> Family Safe</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-features">
+                    <h3>What's Included:</h3>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <i class="fas fa-baby-carriage"></i>
+                            <span>Child Seats</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Safety Features</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-suitcase"></i>
+                            <span>Extra Storage</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-route"></i>
+                            <span>Unlimited Mileage</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-cars">
+                    <h3>Popular Models:</h3>
+                    <div class="car-preview-grid">
+                        <div class="car-preview">
+                            <i class="fas fa-car-side"></i>
+                            <span>Volvo XC90</span>
+                            <small>$80/day</small>
+                        </div>
+                        <div class="car-preview">
+                            <i class="fas fa-car-side"></i>
+                            <span>Toyota Highlander</span>
+                            <small>$70/day</small>
+                        </div>
+                        <div class="car-preview">
+                            <i class="fas fa-car-side"></i>
+                            <span>Honda Pilot</span>
+                            <small>$65/day</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-actions">
+                    <a href="cars.html?category=family" class="cta-btn primary">
+                        <i class="fas fa-search"></i>
+                        <span>Browse Family Cars</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="category-comparison">
+            <div class="section-header">
+                <h2>Category Comparison</h2>
+                <p>Compare different vehicle categories to find your perfect match</p>
+            </div>
+            <div class="comparison-table-container glass-card">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Price Range</th>
+                            <th>Best For</th>
+                            <th>Features</th>
+                            <th>Popularity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Luxury</strong></td>
+                            <td>$200-500/day</td>
+                            <td>Special occasions, Business</td>
+                            <td>Premium service, Concierge</td>
+                            <td><div class="popularity-bar" style="width: 90%"></div></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Electric</strong></td>
+                            <td>$120-200/day</td>
+                            <td>Eco-conscious, Tech lovers</td>
+                            <td>Charging network, Zero emissions</td>
+                            <td><div class="popularity-bar" style="width: 85%"></div></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sports</strong></td>
+                            <td>$150-300/day</td>
+                            <td>Adrenaline, Performance</td>
+                            <td>Track access, High performance</td>
+                            <td><div class="popularity-bar" style="width: 75%"></div></td>
+                        </tr>
+                        <tr>
+                            <td><strong>SUV</strong></td>
+                            <td>$80-150/day</td>
+                            <td>Family trips, Adventure</td>
+                            <td>4WD/AWD, Spacious</td>
+                            <td><div class="popularity-bar" style="width: 95%"></div></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Compact</strong></td>
+                            <td>$40-80/day</td>
+                            <td>City driving, Daily commute</td>
+                            <td>Fuel efficient, Easy parking</td>
+                            <td><div class="popularity-bar" style="width: 80%"></div></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Family</strong></td>
+                            <td>$60-120/day</td>
+                            <td>Family trips, Safety</td>
+                            <td>Child seats, Safety features</td>
+                            <td><div class="popularity-bar" style="width: 88%"></div></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>DriveVision</h3>
+                <p>Premium car rentals for every journey</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="cars.html">All Cars</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 DriveVision. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="categories.js"></script>
+</body>
+</html>

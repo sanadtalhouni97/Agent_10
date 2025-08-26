@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Cars - DriveVision</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animation">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
+    </div>
+
+    <nav class="glass-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-car-side animated-icon"></i>
+                <span>DriveVision</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cars.html" class="active">Cars</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="glass-btn">
+                    <i class="fas fa-user"></i>
+                    <span>Login</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="section-header">
+                <h1>Our Car Collection</h1>
+                <p>Explore our extensive fleet of premium vehicles for every occasion</p>
+            </div>
+            
+            <div class="filters-container glass-card">
+                <div class="filter-group">
+                    <label for="category-filter">Category</label>
+                    <select id="category-filter" class="filter-select">
+                        <option value="">All Categories</option>
+                        <option value="luxury">Luxury</option>
+                        <option value="electric">Electric</option>
+                        <option value="sports">Sports</option>
+                        <option value="suv">SUV</option>
+                        <option value="compact">Compact</option>
+                        <option value="family">Family</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="price-filter">Price Range</label>
+                    <select id="price-filter" class="filter-select">
+                        <option value="">All Prices</option>
+                        <option value="0-100">$0 - $100</option>
+                        <option value="100-200">$100 - $200</option>
+                        <option value="200-300">$200 - $300</option>
+                        <option value="300+">$300+</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="sort-filter">Sort By</label>
+                    <select id="sort-filter" class="filter-select">
+                        <option value="name">Name</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="popularity">Popularity</option>
+                    </select>
+                </div>
+                
+                <button class="filter-btn glass-btn">
+                    <i class="fas fa-filter"></i>
+                    <span>Apply Filters</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="cars-showcase">
+            <div class="cars-grid" id="cars-container">
+                <!-- Luxury Cars -->
+                <div class="car-card glass-card" data-category="luxury" data-price="350">
+                    <div class="car-image">
+                        <i class="fas fa-car-side car-icon"></i>
+                        <div class="car-badge">Premium</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Rolls-Royce Phantom</h3>
+                        <p class="car-category">Ultra Luxury</p>
+                        <div class="car-features">
+                            <span><i class="fas fa-fire"></i> Gas</span>
+                            <span><i class="fas fa-users"></i> 4 Seats</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 563 hp</span>
+                        </div>
+                        <div class="car-price">
+                            <span class="price">$350</span>
+                            <span class="period">/day</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-card glass-card" data-category="luxury" data-price="280">
+                    <div class="car-image">
+                        <i class="fas fa-car-side car-icon"></i>
+                        <div class="car-badge">Luxury</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Bentley Continental GT</h3>
+                        <p class="car-category">Luxury Grand Tourer</p>
+                        <div class="car-features">
+                            <span><i class="fas fa-fire"></i> Gas</span>
+                            <span><i class="fas fa-users"></i> 4 Seats</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 542 hp</span>
+                        </div>
+                        <div class="car-price">
+                            <span class="price">$280</span>
+                            <span class="period">/day</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-card glass-card" data-category="luxury" data-price="250">
+                    <div class="car-image">
+                        <i class="fas fa-car-side car-icon"></i>
+                        <div class="car-badge">Elite</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Mercedes S-Class</h3>
+                        <p class="car-category">Luxury Sedan</p>
+                        <div class="car-features">
+                            <span><i class="fas fa-fire"></i> Gas</span>
+                            <span><i class="fas fa-users"></i> 5 Seats</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 429 hp</span>
+                        </div>
+                        <div class="car-price">
+                            <span class="price">$250</span>
+                            <span class="period">/day</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Electric Cars -->
+                <div class="car-card glass-card" data-category="electric" data-price="180">
+                    <div class="car-image">
+                        <i class="fas fa-car-side car-icon"></i>
+                        <div class="car-badge">Electric</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Tesla Model X</h3>
+                        <p class="car-category">Electric SUV</p>
+                        <div class="car-features">
+                            <span><i class="fas fa-bolt"></i> Electric</span>
+                            <span><i class="fas fa-users"></i> 7 Seats</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 670 hp</span>
+                        </div>
+                        <div class="car-price">
+                            <span class="price">$180</span>
+                            <span class="period">/day</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-card glass-card" data-category="electric" data-price="160">
+                    <div class="car-image">
+                        <i class="fas fa-car-side car-icon"></i>
+                        <div class="car-badge">EV</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Porsche Taycan</h3>
+                        <p class="car-category">Electric Sports</p>
+                        <div class="car-features">
+                            <span><i class="fas fa-bolt"></i> Electric</span>
+                            <span><i class="fas fa-users"></i> 4 Seats</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 750 hp</span>
+                        </div>
+                        <div class="car-price">
+                            <span class="price">$160</span>
+                            <span class="period">/day</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-card glass-card" data-category="electric" data-price="140">
+                    <div class="car-image">
+                        <i class="fas fa-car-side car-icon"></i>
+                        <div class="car-badge">Green</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Audi e-tron</h3>
+                        <p class="car-category">Electric SUV</p>
+                        <div class="car-features">
+                            <span><i class="fas fa-bolt"></i> Electric</span>
+                            <span><i class="fas fa-users"></i> 5 Seats</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 402 hp</span>
+                        </div>
+                        <div class="car-price">
+                            <span class="price">$140</span>
+                            <span class="period">/day</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sports Cars -->
+                <div class="car-card glass-card" data-category="sports" data-price="220">
+                    <div class="car-image">
+                        <i class="fas fa-car-side car-icon"></i>
+                        <div class="car-badge">Sports</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Ferrari 488 GTB</h3>
+                        <p class="car-category">Supercar</p>
+                        <div class="car-features">
+                            <span><i class="fas fa-fire"></i> Gas</span>
+                            <span><i class="fas fa-users"></i> 2 Seats</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 661 hp</span>
+                        </div>
+                        <div class="car-price">
+                            <span class="price">$220</span>
+                            <span class="period">/day</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-card glass-card" data-category="sports" data-price="200">
+                    <div class="car-image">
+                        <i class="fas fa-car-side car-icon"></i>
+                        <div class="car-badge">Fast</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Lamborghini Huracán</h3>
+                        <p class="car-category">Supercar</p>
+                        <div class="car-features">
+                            <span><i class="fas fa-fire"></i> Gas</span>
+                            <span><i class="fas fa-users"></i> 2 Seats</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 602 hp</span>
+                        </div>
+                        <div class="car-price">
+                            <span class="price">$200</span>
+                            <span class="period">/day</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-card glass-card" data-category="sports" data-price="180">
+                    <div class="car-image">
+                        <i class="fas fa-car-side car-icon"></i>
+                        <div class="car-badge">Track</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>McLaren 720S</h3>
+                        <p class="car-category">Supercar</p>
+                        <div class="car-features">
+                            <span><i class="fas fa-fire"></i> Gas</span>
+                            <span><i class="fas fa-users"></i> 2 Seats</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 710 hp</span>
+                        </div>
+                        <div class="car-price">
+                            <span class="price">$180</span>
+                            <span class="period">/day</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SUVs -->
+                <div class="car-card glass-card" data-category="suv" data-price="120">
+                    <div class="car-image">
+                        <i class="fas fa-car-side car-icon"></i>
+                        <div class="car-badge">SUV</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Range Rover Sport</h3>
+                        <p class="car-category">Luxury SUV</p>
+                        <div class="car-features">
+                            <span><i class="fas fa-fire"></i> Gas</span>
+                            <span><i class="fas fa-users"></i> 5 Seats</span>
+                            <span><i class="fas fa-mountain"></i> 4WD</span>
+                        </div>
+                        <div class="car-price">
+                            <span class="price">$120</span>
+                            <span class="period">/day</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-card glass-card" data-category="suv" data-price="100">
+                    <div class="car-image">
+                        <i class="fas fa-car-side car-icon"></i>
+                        <div class="car-badge">Family</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>BMW X5</h3>
+                        <p class="car-category">Luxury SUV</p>
+                        <div class="car-features">
+                            <span><i class="fas fa-fire"></i> Gas</span>
+                            <span><i class="fas fa-users"></i> 7 Seats</span>
+                            <span><i class="fas fa-mountain"></i> AWD</span>
+                        </div>
+                        <div class="car-price">
+                            <span class="price">$100</span>
+                            <span class="period">/day</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-card glass-card" data-category="suv" data-price="90">
+                    <div class="car-image">
+                        <i class="fas fa-car-side car-icon"></i>
+                        <div class="car-badge">Adventure</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Jeep Wrangler</h3>
+                        <p class="car-category">Off-Road SUV</p>
+                        <div class="car-features">
+                            <span><i class="fas fa-fire"></i> Gas</span>
+                            <span><i class="fas fa-users"></i> 5 Seats</span>
+                            <span><i class="fas fa-mountain"></i> 4WD</span>
+                        </div>
+                        <div class="car-price">
+                            <span class="price">$90</span>
+                            <span class="period">/day</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Compact Cars -->
+                <div class="car-card glass-card" data-category="compact" data-price="60">
+                    <div class="car-image">
+                        <i class="fas fa-car-side car-icon"></i>
+                        <div class="car-badge">Compact</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>BMW 3 Series</h3>
+                        <p class="car-category">Compact Luxury</p>
+                        <div class="car-features">
+                            <span><i class="fas fa-fire"></i> Gas</span>
+                            <span><i class="fas fa-users"></i> 5 Seats</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 255 hp</span>
+                        </div>
+                        <div class="car-price">
+                            <span class="price">$60</span>
+                            <span class="period">/day</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-card glass-card" data-category="compact" data-price="50">
+                    <div class="car-image">
+                        <i class="fas fa-car-side car-icon"></i>
+                        <div class="car-badge">Efficient</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Audi A4</h3>
+                        <p class="car-category">Compact Sedan</p>
+                        <div class="car-features">
+                            <span><i class="fas fa-fire"></i> Gas</span>
+                            <span><i class="fas fa-users"></i> 5 Seats</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 201 hp</span>
+                        </div>
+                        <div class="car-price">
+                            <span class="price">$50</span>
+                            <span class="period">/day</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-card glass-card" data-category="compact" data-price="45">
+                    <div class="car-image">
+                        <i class="fas fa-car-side car-icon"></i>
+                        <div class="car-badge">Smart</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Mercedes A-Class</h3>
+                        <p class="car-category">Compact Hatchback</p>
+                        <div class="car-features">
+                            <span><i class="fas fa-fire"></i> Gas</span>
+                            <span><i class="fas fa-users"></i> 5 Seats</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 188 hp</span>
+                        </div>
+                        <div class="car-price">
+                            <span class="price">$45</span>
+                            <span class="period">/day</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Family Cars -->
+                <div class="car-card glass-card" data-category="family" data-price="80">
+                    <div class="car-image">
+                        <i class="fas fa-car-side car-icon"></i>
+                        <div class="car-badge">Family</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Volvo XC90</h3>
+                        <p class="car-category">Family SUV</p>
+                        <div class="car-features">
+                            <span><i class="fas fa-fire"></i> Gas</span>
+                            <span><i class="fas fa-users"></i> 7 Seats</span>
+                            <span><i class="fas fa-shield-alt"></i> Safe</span>
+                        </div>
+                        <div class="car-price">
+                            <span class="price">$80</span>
+                            <span class="period">/day</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-card glass-card" data-category="family" data-price="70">
+                    <div class="car-image">
+                        <i class="fas fa-car-side car-icon"></i>
+                        <div class="car-badge">Comfort</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Toyota Highlander</h3>
+                        <p class="car-category">Family SUV</p>
+                        <div class="car-features">
+                            <span><i class="fas fa-fire"></i> Gas</span>
+                            <span><i class="fas fa-users"></i> 8 Seats</span>
+                            <span><i class="fas fa-shield-alt"></i> Reliable</span>
+                        </div>
+                        <div class="car-price">
+                            <span class="price">$70</span>
+                            <span class="period">/day</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-card glass-card" data-category="family" data-price="65">
+                    <div class="car-image">
+                        <i class="fas fa-car-side car-icon"></i>
+                        <div class="car-badge">Spacious</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Honda Pilot</h3>
+                        <p class="car-category">Family SUV</p>
+                        <div class="car-features">
+                            <span><i class="fas fa-fire"></i> Gas</span>
+                            <span><i class="fas fa-users"></i> 8 Seats</span>
+                            <span><i class="fas fa-shield-alt"></i> Safe</span>
+                        </div>
+                        <div class="car-price">
+                            <span class="price">$65</span>
+                            <span class="period">/day</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Luxury Cars -->
+                <div class="car-card glass-card" data-category="luxury" data-price="320">
+                    <div class="car-image">
+                        <i class="fas fa-car-side car-icon"></i>
+                        <div class="car-badge">Ultra</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Bentley Flying Spur</h3>
+                        <p class="car-category">Luxury Sedan</p>
+                        <div class="car-features">
+                            <span><i class="fas fa-fire"></i> Gas</span>
+                            <span><i class="fas fa-users"></i> 4 Seats</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 626 hp</span>
+                        </div>
+                        <div class="car-price">
+                            <span class="price">$320</span>
+                            <span class="period">/day</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-card glass-card" data-category="luxury" data-price="300">
+                    <div class="car-image">
+                        <i class="fas fa-car-side car-icon"></i>
+                        <div class="car-badge">Exclusive</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Aston Martin DB11</h3>
+                        <p class="car-category">Luxury GT</p>
+                        <div class="car-features">
+                            <span><i class="fas fa-fire"></i> Gas</span>
+                            <span><i class="fas fa-users"></i> 4 Seats</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 503 hp</span>
+                        </div>
+                        <div class="car-price">
+                            <span class="price">$300</span>
+                            <span class="period">/day</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Electric Cars -->
+                <div class="car-card glass-card" data-category="electric" data-price="170">
+                    <div class="car-image">
+                        <i class="fas fa-car-side car-icon"></i>
+                        <div class="car-badge">Future</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Lucid Air</h3>
+                        <p class="car-category">Electric Luxury</p>
+                        <div class="car-features">
+                            <span><i class="fas fa-bolt"></i> Electric</span>
+                            <span><i class="fas fa-users"></i> 5 Seats</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 800 hp</span>
+                        </div>
+                        <div class="car-price">
+                            <span class="price">$170</span>
+                            <span class="period">/day</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-card glass-card" data-category="electric" data-price="150">
+                    <div class="car-image">
+                        <i class="fas fa-car-side car-icon"></i>
+                        <div class="car-badge">Eco</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Rivian R1S</h3>
+                        <p class="car-category">Electric SUV</p>
+                        <div class="car-features">
+                            <span><i class="fas fa-bolt"></i> Electric</span>
+                            <span><i class="fas fa-users"></i> 7 Seats</span>
+                            <span><i class="fas fa-mountain"></i> Adventure</span>
+                        </div>
+                        <div class="car-price">
+                            <span class="price">$150</span>
+                            <span class="period">/day</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Sports Cars -->
+                <div class="car-card glass-card" data-category="sports" data-price="240">
+                    <div class="car-image">
+                        <i class="fas fa-car-side car-icon"></i>
+                        <div class="car-badge">Super</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>McLaren P1</h3>
+                        <p class="car-category">Hypercar</p>
+                        <div class="car-features">
+                            <span><i class="fas fa-fire"></i> Hybrid</span>
+                            <span><i class="fas fa-users"></i> 2 Seats</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 903 hp</span>
+                        </div>
+                        <div class="car-price">
+                            <span class="price">$240</span>
+                            <span class="period">/day</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-card glass-card" data-category="sports" data-price="190">
+                    <div class="car-image">
+                        <i class="fas fa-car-side car-icon"></i>
+                        <div class="car-badge">Track</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Porsche 911 GT3</h3>
+                        <p class="car-category">Sports Car</p>
+                        <div class="car-features">
+                            <span><i class="fas fa-fire"></i> Gas</span>
+                            <span><i class="fas fa-users"></i> 4 Seats</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 502 hp</span>
+                        </div>
+                        <div class="car-price">
+                            <span class="price">$190</span>
+                            <span class="period">/day</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="pagination-container">
+            <button class="pagination-btn glass-btn" id="prev-page">
+                <i class="fas fa-chevron-left"></i>
+                <span>Previous</span>
+            </button>
+            <div class="page-numbers">
+                <span class="page-number active">1</span>
+                <span class="page-number">2</span>
+                <span class="page-number">3</span>
+            </div>
+            <button class="pagination-btn glass-btn" id="next-page">
+                <span>Next</span>
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </main>
+
+    <footer class="glass-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>DriveVision</h3>
+                <p>Premium car rentals for every journey</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="cars.html">All Cars</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 DriveVision. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="cars-filter.js"></script>
+</body>
+</html>
